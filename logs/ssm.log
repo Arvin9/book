@@ -6798,4 +6798,46 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 47; columnNumber: 54; cvc-
  [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
  [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
  [DEBUG] [2016-06-23 11:24:26][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
+ [DEBUG] [2016-06-23 11:28:33][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 11:28:33][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 11:28:33][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
+ [DEBUG] [2016-06-23 12:12:18][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 12:12:18][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 12:12:18][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
+ [DEBUG] [2016-06-23 12:13:10][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 12:13:10][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 12:13:10][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
+ [INFO] [2016-06-23 13:20:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 13:20:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 13:20:14 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 13:20:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 13:20:15][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 13:20:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 13:20:15][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1281 ms
+ [INFO] [2016-06-23 13:20:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 13:20:15][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 13:20:15 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 13:20:15][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 13:20:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 13:20:16][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 13:20:16][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 13:20:16][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 13:20:16][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 13:20:16][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1434 ms
+ [INFO] [2016-06-23 13:21:59][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+ [INFO] [2016-06-23 13:21:59][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Thu Jun 23 13:21:59 CST 2016]; root of context hierarchy
+ [INFO] [2016-06-23 13:21:59][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+ [INFO] [2016-06-23 13:21:59][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+ [INFO] [2016-06-23 13:21:59][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 13:22:00][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1435 ms
+ [INFO] [2016-06-23 13:22:00][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+ [INFO] [2016-06-23 13:22:00][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Thu Jun 23 13:22:00 CST 2016]; parent: Root WebApplicationContext
+ [INFO] [2016-06-23 13:22:00][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+ [INFO] [2016-06-23 13:22:01][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO] [2016-06-23 13:22:01][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/book],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView site.nebulas.controller.BookController.operationLog()
+ [INFO] [2016-06-23 13:22:01][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/bookQueryByParam],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object site.nebulas.controller.BookController.bookQueryByParam(site.nebulas.beans.Book)
+ [INFO] [2016-06-23 13:22:02][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+ [INFO] [2016-06-23 13:22:02][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+ [INFO] [2016-06-23 13:22:02][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 1380 ms
+ [DEBUG] [2016-06-23 13:22:10][site.nebulas.dao.BookDao.bookQueryByParam]==>  Preparing: select book_id bookID, serial_number serialNumber, book_name bookName, book_author bookAuthor, book_concern bookConcern, book_edition bookEdition, book_price bookPrice from book 
+ [DEBUG] [2016-06-23 13:22:10][site.nebulas.dao.BookDao.bookQueryByParam]==> Parameters: 
+ [DEBUG] [2016-06-23 13:22:10][site.nebulas.dao.BookDao.bookQueryByParam]<==      Total: 2
  

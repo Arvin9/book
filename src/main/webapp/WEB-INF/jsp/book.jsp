@@ -78,6 +78,13 @@
 			        </div>
 			        <div class="form-group">
 				        <div class="input-group">
+				          <label class="input-group-addon" for="serialNumber">编号</label>
+				          <input type="text" class="form-control" name="bookName"
+				           id="bookName" required="required">
+				        </div>
+			        </div>
+			        <div class="form-group">
+				        <div class="input-group">
 				          <label class="input-group-addon" for="bookName">书名</label>
 				          <input type="text" class="form-control" name="bookName"
 				           id="bookName" required="required">
