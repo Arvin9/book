@@ -274,7 +274,7 @@
 					});
 					$('#removeBtn').click (function(){
 						$("#file").removeAttr("required");
-						$("#wrap").dialog({title:"删除",autoOpen: false});
+						//$("#wrap").dialog({title:"删除",autoOpen: false});
 						 var selections = $('#table_id').bootstrapTable('getSelections');
 						 if(selections.length==0){
 							 $.messager.popup('请选择要删除的记录');
@@ -284,9 +284,7 @@
 						 Item.commitUrl = '${ctx}/deleteBook';
 						$('#form').form("clear");
 						
-						$('#bookPicFile').removeAttr("required");
-						$('#bookFileOrURL').removeAttr("required");
-						$('#bookFileOrURL').val("1");
+
 						$('#id').show();
 						$('#form').form("load",row);
 						$("#wrap").dialog("open");

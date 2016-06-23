@@ -37,7 +37,7 @@ public class BookController {
 	
 	
 	
-	@RequestMapping("book")
+	@RequestMapping("/book")
 	public ModelAndView operationLog(){
 		ModelAndView modelAndView = new ModelAndView("book");
 		return modelAndView;
@@ -81,22 +81,6 @@ public class BookController {
 		return response; 
 	}
 
-	
-
-	
-	/*
-	
-
-	
-	@RequestMapping("updateBook")
-	@ResponseBody
-	public Object updateBook(Book book){
-		Response response = new Response();
-		book.setUpdateTime(DateUtil.getDateTimeString(new Date()));
-		bookService.update(book);
-		return response;
-	}
-	
 	@RequestMapping("deleteBook")
 	@ResponseBody
 	public Object deleteBook(Book book){
@@ -104,7 +88,16 @@ public class BookController {
 		bookService.delete(book);
 		return response;
 	}
-	*/
+
+
+	@RequestMapping("updateBook")
+	@ResponseBody
+	public Object updateBook(Book book){
+		Response response = new Response();
+		bookService.update(book);
+		return response;
+	}
+
 }
 
 

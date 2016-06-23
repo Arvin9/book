@@ -24,45 +24,28 @@
 	<update id="update">
 		update book
 		<set>
+			<if test="serialNumber !=null and serialNumber !='' ">
+				serial_number = #{serialNumber},
+			</if>
 			<if test="bookName !=null and bookName !='' ">
 				book_name = #{bookName},
 			</if>
 			<if test="bookAuthor !=null and bookAuthor !='' ">
 				book_author = #{bookAuthor},
 			</if>
+			<if test="bookConcern !=null and bookConcern !='' ">
+				book_concern = #{bookConcern},
+			</if>
+			<if test="bookEdition !=null and bookEdition !='' ">
+				book_edition = #{bookEdition},
+			</if>
+			<if test="bookPrice !=null and bookPrice !='' ">
+				book_price = #{bookPrice},
+			</if>
 			<if test="bookDesc !=null and bookDesc !='' ">
 				book_desc = #{bookDesc},
 			</if>
-			<if test="publishingCompany !=null and publishingCompany !='' ">
-				publishing_company = #{publishingCompany},
-			</if>
-			<if test="price !=null and price !='' ">
-				price = #{price},
-			</if>
-			<if test="publishingYear !=null and publishingYear !='' ">
-				publishing_year = #{publishingYear},
-			</if>
-			<if test="bookPic !=null and bookPic !='' ">
-				book_pic = #{bookPic},
-			</if>
-			<if test="bookURL !=null and bookURL !='' ">
-				book_url = #{bookURL},
-			</if>
-			<if test="categoryID !=null and categoryID !='' ">
-				category_id = #{categoryID},
-			</if>
-			<if test="isHot != null ">
-				is_hot = #{isHot},
-			</if>
-			<if test="isRecommend != null ">
-				is_recommend = #{isRecommend},
-			</if>
-			<if test="isTop != null ">
-				is_top = #{isTop},
-			</if>
-			<if test="updateTime !=null and updateTime !='' ">
-				update_time = #{updateTime}
-			</if>
+			
 		</set>
 		where book_id = #{bookID}
 	</update>
