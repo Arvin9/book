@@ -10,15 +10,15 @@
 			book_author bookAuthor,
 			book_concern bookConcern,
 			book_edition bookEdition,
-			book_price bookPrice
-			
+			book_price bookPrice,
+			book_desc bookDesc
 		from book
 	</select>
 	
 	
 	<insert id="insert">
-		insert into book (book_name,book_author,book_desc,publishing_company,price,publishing_year,book_pic,book_url,category_id,is_hot,is_recommend,is_top,update_time) 
-		values (#{bookName},#{bookAuthor},#{bookDesc},#{publishingCompany},#{price},#{publishingYear},#{bookPic},#{bookURL},#{categoryID},#{isHot},#{isRecommend},#{isTop},#{updateTime})
+		insert into book (serial_number,book_name,book_author,book_concern,book_edition,book_price,book_desc) 
+		values (#{serialNumber},#{bookName},#{bookAuthor},#{bookConcern},#{bookEdition},#{bookPrice},#{bookDesc})
 	</insert>
 	
 	<update id="update">

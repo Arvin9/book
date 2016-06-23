@@ -7,7 +7,7 @@ public class Book {
 	private String bookAuthor;
 	private String bookConcern;
 	private String bookEdition;
-	private Double bookPrice;
+	private String bookPrice;
 	private String bookDesc;
 	
 	public Integer getBookID() {
@@ -46,10 +46,10 @@ public class Book {
 	public void setBookEdition(String bookEdition) {
 		this.bookEdition = bookEdition;
 	}
-	public Double getBookPrice() {
+	public String getBookPrice() {
 		return bookPrice;
 	}
-	public void setBookPrice(Double bookPrice) {
+	public void setBookPrice(String bookPrice) {
 		this.bookPrice = bookPrice;
 	}
 	public String getBookDesc() {

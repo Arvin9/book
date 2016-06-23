@@ -79,8 +79,8 @@
 			        <div class="form-group">
 				        <div class="input-group">
 				          <label class="input-group-addon" for="serialNumber">编号</label>
-				          <input type="text" class="form-control" name="bookName"
-				           id="bookName" required="required">
+				          <input type="text" class="form-control" name="serialNumber"
+				           id="serialNumber" required="required">
 				        </div>
 			        </div>
 			        <div class="form-group">
@@ -90,121 +90,45 @@
 				           id="bookName" required="required">
 				        </div>
 			        </div>
+
 			        <div class="form-group">
 				        <div class="input-group">
 				          <label class="input-group-addon" for="bookAuthor">作者</label>
 				          <input type="text" class="form-control" name="bookAuthor"
-				           id="bookAuthor" required="required">
+				           id="bookAuthor" >
+				        </div>
+			        </div>
+			       
+			        <div class="form-group">
+				        <div class="input-group">
+				          <label class="input-group-addon" for="bookConcern">出版社</label>
+				          <input type="text" class="form-control" name="bookConcern" 
+				           id="bookConcern">
+				        </div>
+			        </div>
+			        
+			        <div class="form-group">
+				        <div class="input-group">
+				          <label class="input-group-addon" for="bookEdition">版次</label>
+				          <input type="text" class="form-control" name="bookEdition" 
+				           id="bookEdition">
+				        </div>
+			        </div>
+			        <div class="form-group">
+				        <div class="input-group">
+				          <label class="input-group-addon" for="bookPrice">定价</label>
+				          <input type="text" class="form-control" name="bookPrice" 
+				           id="bookPrice">
 				        </div>
 			        </div>
 			        <div class="form-group">
 				        <div class="input-group">
 				          <label class="input-group-addon" for="bookDesc">描述</label>
-				          <input type="text" class="form-control" name="bookDesc" required="required"
-				           id="bookDesc">
+				          <input type="text" class="form-control" name="bookDesc" id="bookDesc">
 				        </div>
 			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="publishingCompany">出版社</label>
-				          <input type="text" class="form-control" name="publishingCompany" required="required"
-				           id="publishingCompany">
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="price">价格</label>
-				          <input type="text" class="form-control" name="price" required="required"
-				           id="price">
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="publishingYear">出版年份</label>
-				          <input type="text" class="form-control" name="publishingYear" required="required"
-				           id="publishingYear">
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="bookPicFile">图书照片</label>
-				          <input type="text" class="form-control" name="bookPic" id ="bookImg" style="display: none"></input>
-				          <img id="img" width="50" height="50"></img>
-				          <input type="file" class="form-control" name="bookPicFile" required="required"
-				           id="bookPicFile">
-				        </div>
-			        </div>
-			        
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="bookFileOrURL">上传图书文件或设置链接</label>
-				          <select type="text" class="form-control" name="bookFileOrURL" required="required"
-				           id="bookFileOrURL" onchange="choose(this.value)">
-				           	<option value='0' >上传图书文件</option>
-  							<option value='1' >设置链接</option>
-  						  </select>
-				        </div>
-			        </div>
-			        <div class="form-group" hidden="hidden" id="uploadBookFileDiv">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="uploadBookFile">上传图书文件</label>
-				          <input type="file" class="form-control" name="uploadBookFile" required="required"
-				           id="uploadBookFile">
-				        </div>
-			        </div>
-			        <div class="form-group"  id="bookURlDiv">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="bookURL">设置图书链接</label>
-				          <input type="text" class="form-control" name="bookURL" required="required"
-				           id="bookURL">
-				        </div>
-			        </div>
-			        
-
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="categoryID">类别ID</label>
-				          <select  class="form-control" name="categoryID" required="required"
-				           id="categoryID">
-				           <c:forEach var="cate" items="${categorys}" >
-				           		
-				           		<option value='${cate.categoryID}' selected="selected">${cate.categoryName}</option>
-  								
-				           </c:forEach>
-				           		
-  						  </select>
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="isHot">是否热门</label>
-				          <select   class="form-control" name="isHot"
-				           id="isHot">
-				           		<option value='1' selected="selected">是</option>
-  								<option value='0' >否</option>
-  						  </select>
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="isRecommend">是否推荐</label>
-				          <select   class="form-control" name="isRecommend"
-				           id="isRecommend">
-				           		<option value='1' selected="selected">是</option>
-  								<option value='0' >否</option>
-  						  </select>
-				        </div>
-			        </div>
-			        <div class="form-group">
-				        <div class="input-group">
-				          <label class="input-group-addon" for="isTop">是否置顶</label>
-				          <select   class="form-control" name="isTop"
-				           id="isTop">
-				           		<option value='1' selected="selected">是</option>
-  								<option value='0' >否</option>
-  						  </select>
-				        </div>
-			        </div>
+			        			        
+			    
 					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 					<a onclick="Item.save()" class="btn btn-primary">提交</a>
 				</form>
@@ -310,17 +234,9 @@
 					$("#wrapOfAddBatch").dialog({title:"操作",autoOpen: false});
 					
 					$('#add').click (function(){
-						$("#file").attr("required","required");
 						$("#wrap").dialog({title:"新增",autoOpen: false});
 						Item.commitUrl = '${ctx}/addBook';
-						$('#form').form("clear");
-						
-						$('#categoryID').val("1");
-						$('#isHot').val("1");
-						$('#isRecommend').val("1");
-						$('#isTop').val("1");
-						$('#bookFileOrURL').val("1");
-						
+						$('#form').form("clear");											
 						$('#id').hide();
 						$("#wrap").dialog("open");
 					});
